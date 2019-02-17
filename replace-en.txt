@@ -1,0 +1,11 @@
+s:Internet connection:Internet connection:g;
+s:Eavesdropping:Eavesdropping:g;
+s:Data sharing:Data sharing:g;
+s:KEY:KEY:g;
+s:LOCATION:LOCATION:g;
+s:DATA:DATA:g;
+s:POLICE:POLICE:g;
+s:LAWYER:LAWYER:g;
+s:SYSADMIN:SYSADMIN:g;
+s:TOR:TOR:g;
+s:HACKER:HACKER:g;
