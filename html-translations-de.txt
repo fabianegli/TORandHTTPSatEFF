@@ -1,0 +1,23 @@
+Click the "Tor" button to see what data is visible to eavesdroppers when you're using Tor. The button will turn green to indicate that Tor is on.
+
+Klicke auf den "Tor" Knopf um herauszufinden welche Daten Spione sehen wenn du Tor benutzt. Der Knopf wird grün um anzuzeigen, dass Tor aktiv ist.
+
+
+Click the "HTTPS" button to see what data is visible to eavesdroppers when you're using HTTPS. The button will turn green to indicate that HTTPS is on.
+
+Klicke auf den "HTTPS" Knopf um herauszufinden welche Daten Spione sehen wenn du HTTPS benutzt. Der Knopf wird grün um anzuzeigen, dass HTTPS aktiv ist.
+
+
+When both buttons are green, you see the data that is visible to eavesdroppers when you are using both tools.
+
+Wenn beide Knöpfe grün sind, siehst du was für Spione sichtbar ist, wenn beide Methoden benutzt werden.
+
+
+When both buttons are grey, you see the data that is visible to eavesdroppers when you don't use either tool.
+
+Wenn beide Knöpfe grau sind, siehst du was für Spione sichtbar ist, wenn keine der beiden Methoden benutzt wird.
+
+
+Potentially visible data includes: the site you are visiting (SITE.COM), your username and password (USER/PW), the data you are transmitting (DATA), your IP address (LOCATION), and whether or not you are using Tor (TOR).
+
+Potentiell ersichtliche Daten beinhalten: die besuchte Webseite (SITE.COM), Deinen Benutzernamen und Passwort (USER/PW), die übermittelten Daten (DATEN), deine IP Adresse (STANDORT), und ob du Tor verwendest oder nicht (TOR).

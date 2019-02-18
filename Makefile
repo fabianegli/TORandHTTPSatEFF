@@ -9,7 +9,7 @@
 # Makefile to convert translated and edited svg files to png in the correct size
 
 # then add your language code into the list here
-LANG = en
+LANG = en de
 
 SVG = $(foreach l, $(LANG),\
 	$(foreach f,\
@@ -24,7 +24,8 @@ IMG = $(foreach l, $(LANG),\
 		tor-https-1.png\
 		tor-https-2.png\
 		tor-https-3.png,\
-	$l/png/$f) \
+	$l/png/$f))
+PDF = $(foreach l, $(LANG),\
 	$(foreach f,\
 		tor-https-0.pdf\
 		tor-https-1.pdf\
@@ -32,18 +33,24 @@ IMG = $(foreach l, $(LANG),\
 		tor-https-3.pdf,\
 	$l/pdf/$f))
 
-img: language_directories $(IMG)
-translate: language_directories $(SVG)
-all: language_directories $(SVG) $(IMG)
+pdf: language_directory_pdf $(PDF)
+img: language_directory_png $(IMG)
+translate: language_directory_svg $(SVG)
+exports: language_directory_png language_directory_pdf $(IMG) $(PDF)
+all: language_directory_svg language_directory_png language_directory_pdf $(SVG) $(IMG) $(PDF)
 
 INKSCAPE_PNG = inkscape -C -w 792 -e
 INKSCAPE_PDF = inkscape -C -A
 
-language_directories:
+language_directory_svg:
 	mkdir -p $(LANG)
 	mkdir -p $(LANG)/svg
-	mkdir -p $(LANG)/png
+
+language_directory_pdf:
 	mkdir -p $(LANG)/pdf
+
+language_directory_png:
+	mkdir -p $(LANG)/png
 
 $(LANG)/svg/tor-https-0.svg: en/svg/tor-https-0.svg
 	sed "`cat replace-$(LANG).txt | tr -d '\n'`" > $@ < $<
