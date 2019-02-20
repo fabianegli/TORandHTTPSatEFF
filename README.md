@@ -2,6 +2,7 @@
 
 These graphics make the function of HTTPS and TOR visible for a lay audience.
 
+
 # How to Translate Images and Export Images (Various Formats)
 
 1. Find out the language code of sour language. Let's assume it is 'fr'.
@@ -18,6 +19,7 @@ NB: `make -f Makefile` and `make -f Makefile all` combine steps 5. and 7. and
 require that the formatting of the English original SVGs is compatible with the
 translation.
 
+
 # Translate the Text on the Website
 
 There in no standard way - yet.
@@ -31,9 +33,15 @@ The German translations are in the html-translations-de.txt file.
 
 https://www.eff.org/pages/tor-and-https
 
-### German
 
-https://www.eff.org/de/pages/tor-and-https
+# Contributions
+
+Original work (English version) by the EFF.
+
+German translations and minor adjustments in the SVG by Fabian Egli.
+
+Workflow and makefiles are loosely based on the makefiles of the Free Software
+Foundation's emailselfdefense.fsf.org translation repository.
 
 
 # License
